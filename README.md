@@ -33,7 +33,7 @@ Change the bot's [token](https://core.telegram.org/bots#3-how-do-i-create-a-bot)
 ## Running the bot
 Run the price scrapper in the background for generating the graphs:
 
-    python3 price_scrapper.py &
+    python3 price_scraper.py &
 
 You can now run the bot by using:
 

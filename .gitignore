@@ -1,0 +1,5 @@
+config.ini
+images/*
+data.db
+price.csv
+__pycache__/

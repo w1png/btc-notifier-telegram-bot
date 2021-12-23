@@ -28,8 +28,7 @@ Change the bot's [token](https://core.telegram.org/bots#3-how-do-i-create-a-bot)
     python3 setttings.py -t <token>
     python3 settings.py -n <time>
 
- _The default notification time is 07:00._
-_You can read more about the settings file in _[the next "Changing the settings" section](#changing-the-settings)._
+ _The default notification time is 07:00. You can read more about the settings file in [the "Changing the settings" section](#changing-the-settings)._
 
 ## Running the bot
 Run the price scrapper in the background for generating the graphs:

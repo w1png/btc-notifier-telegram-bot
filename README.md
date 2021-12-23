@@ -22,14 +22,14 @@ Install the dependencies:
     python3 -m pip install -r requirements.txt
 Run the installation script:
 
-    python3 setup.py
+    python3 installer.py
 Change the bot's [token](https://core.telegram.org/bots#3-how-do-i-create-a-bot) and the notification time:
 
     python3 setttings.py -t <token>
     python3 settings.py -n <time>
 
  _The default notification time is 07:00._
-_You can read more about the settings file in _[the next section](#changing-the-settings)._
+_You can read more about the settings file in _[the next "Changing the settings" section](#changing-the-settings)._
 
 ## Running the bot
 Run the price scrapper in the background for generating the graphs:
@@ -60,4 +60,3 @@ List all the users in the database:
  List all the subscribed users in the database:
 
     python3 user.py -s
-

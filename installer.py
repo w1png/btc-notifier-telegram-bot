@@ -31,7 +31,7 @@ while True:
             remove("config.ini")
             print("\"config.ini\" removed.")
         with open("config.ini", "w") as config:
-            config.write("[main_settings]\ntoken = <your bot's token here>\ntime = 07:00\n")
+            config.write("[main_settings]\ntoken = <your bot's token here>\ntime = 07:00\ndebug_mode = False\n\n[graph_settings]\ncolor = \"\#D3D3D3\"border = 1\ntitlefontsize = 20\nlabelfontsize = 20\ntickfontsize = 10\n")
         print("\"config.ini\" created.\nYou can change the config by using the \"settings.py\" file. Use \"python3 settings.py -h\" for more information.")
         print("-------------\nSetup comlete.")
         input("Press ENTER to continue...")

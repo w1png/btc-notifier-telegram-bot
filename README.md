@@ -5,6 +5,8 @@
   - [Preparations](#preparations)
   - [Running the bot](#running-the-bot)
 - [Changing the settings](#changing-the-settings)
+  - [Main settings](#main-settings)
+  - [Graph settings](#graph-settings)
 - [Debugging](#debugging)
  
 # Overview
@@ -41,15 +43,31 @@ You can now run the bot by using:
     
 
 # Changing the settings
+## Main settings
 Changing the bot's token:
 
     python3 settings.py -t <token>
+
+Enabling debug mode:
+
+    python3 settings.py -d <True/False>
     
  Changing the notification time:
  
     python3 settings.py -n <time>
    
  The time should be input in the "hours:minutes" format using the 24 hour time system i.e. `python3 settings.py -n 07:00`.
+
+## Graph settings
+Changing the border width:
+
+    python3 settings.py -b <value>
+
+Changing the bar color:
+
+    python3 settings.py -c <color>
+
+The color should be input in the hex color format i.e `python3 settings.py -c #D3D3D3`
 
 # Debugging
 List all the users in the database:

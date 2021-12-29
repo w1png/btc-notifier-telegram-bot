@@ -1,8 +1,12 @@
 import matplotlib.pyplot as plt
 import price_scraper as ps
 from datetime import datetime, timedelta
+from settings import Settings
 
 class Charts:
+    def __init__(self):
+        self.settings = Settings()
+        
     def daily(self):
         # TODO: refactor
         data = ps.get_data()[::-1]
@@ -22,12 +26,12 @@ class Charts:
             
         plt.autoscale()
         plt.figure(figsize=(10, 10))
-        plt.title("BTC price in the last 24 hours", fontsize=20)
+        plt.title("BTC price in the last 24 hours", fontsize=self.settings.get_titlefontsize())
         plt.xticks(range(len(values)), [hour for hour in values.keys()])
-        plt.xlabel("Time (UTC)", fontsize=20)
-        plt.ylabel("Price (USD)", fontsize=20)
-        plt.tick_params(labelsize=10) 
-        plt.bar(range(len(values)), [price for price in values.values()], color="#D3D3D3", edgecolor="black", linewidth=1) # TODO: setting to ebable/disable bars
+        plt.xlabel("Time (UTC)", fontsize=self.settings.get_labelfontsize())
+        plt.ylabel("Price (USD)", fontsize=self.settings.get_labelfontsize())
+        plt.tick_params(labelsize=self.settings.get_tickfontsize()) 
+        plt.bar(range(len(values)), [price for price in values.values()], color=self.settings.get_color(), edgecolor="black", linewidth=self.settings.get_border()) # TODO: setting to ebable/disable bars
         # TODO: setting to enable/disable plots plt.plot(range(len(values)), [price for price in values.values()], color="#000000")
         min_price = min([price[0] for price in data])
         max_price = max([price[0] for price in data])

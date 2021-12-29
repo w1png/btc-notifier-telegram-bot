@@ -67,7 +67,7 @@ Changing the bar color:
 
     python3 settings.py -c <color>
 
-The color should be input in the hex color format i.e `python3 settings.py -c #D3D3D3`
+The color should be input in the hex color format i.e `python3 settings.py -c D3D3D3`
 
 # Debugging
 List all the users in the database:
